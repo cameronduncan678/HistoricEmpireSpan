@@ -1,4 +1,95 @@
+/*Color*/
+$main-body: rgb(24,24,24);
+$tint-body: rgb(45,45,45);
+$main-red: rgba(184,27,27,1);
+$shade-red: rgba(79,15,15,1);
+$dark-black:rgb(15,15,15);
+$tint-black:rgb(32,32,32);
+
 body{
-    background: black;
+    background: $main-body;
+    background: linear-gradient(90deg, $main-body 0%, $tint-body 50%);
     color: white;
+}
+
+.Empires-Header{
+    height: 180px;
+    background: linear-gradient(90deg, $main-red 0%, $shade-red 100%);
+    padding-top: 0.1px;
+}
+
+.Empires-Header-title{
+    width: 50%;
+    margin-left: 5%;
+}
+
+.Empires-Title-Underline{
+    border-top: solid $dark-black 5px;
+    height: 1px;
+    border-radius:50px;
+}
+
+.Empires-Nav{
+    width: 300px;
+    height: 100%;
+}
+
+.Empires-Data{
+    height: 500px;
+    width:50%;
+}
+
+.Empires-History{
+    height: 500px;
+    width:50%;
+}
+
+.Empires-History-details{
+    height: 90%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    background: rgb(15,15,15);
+    background: linear-gradient(180deg, $dark-black 0%, $tint-black 100%);
+    overflow-y: scroll;
+}
+
+.Empires-History-details-title{
+    padding: 5px;
+    margin-left: 20px;
+    height: 100px;
+}
+
+.Empires-History-details-title-title{
+    float:left;
+}
+
+.Empires-History-details-title-perc{
+    float:right;
+    margin-right: 20px;
+}
+
+.Empires-History-details-map{
+    width: 80%;
+    height: 140px;
+    border: solid red 2px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.Empires-History-details-charts{
+    height: 130px;
+}
+
+.Empires-History-details-charts-chart{
+    width: 33%;
+    height: 100%;
+    float:left;
+    border: solid red;
+}
+
+.Empires-History-details-details{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
