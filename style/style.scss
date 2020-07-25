@@ -4,23 +4,57 @@ $tint-body: rgb(45,45,45);
 $main-red: rgba(184,27,27,1);
 $shade-red: rgba(79,15,15,1);
 $dark-black:rgb(15,15,15);
-$tint-black:rgb(32,32,32);
+$tint-black:rgb(59, 59, 59);
 
 body{
     background: $main-body;
     background: linear-gradient(90deg, $main-body 0%, $tint-body 50%);
     color: white;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .Empires-Header{
-    height: 180px;
+    height: 200px;
     background: linear-gradient(90deg, $main-red 0%, $shade-red 100%);
     padding-top: 0.1px;
+    box-shadow: 3px 3px 20px $dark-black;
 }
 
 .Empires-Header-title{
-    width: 50%;
+    width: 40%;
+    height: 100%;
     margin-left: 5%;
+    float: left;
+}
+
+.Empires-Header-Nav{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.Empires-Header-Nav-Nav{
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.Empires-Header-Nav-Nav-item{
+    float: left;
+    font-size: x-large;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+}
+
+.item-active{
+    background: $dark-black;
+}
+
+.item-inactive{
+    background: transparent;
+    border: solid $dark-black;
+    color: $dark-black;
 }
 
 .Empires-Title-Underline{
@@ -35,13 +69,30 @@ body{
 }
 
 .Empires-Data{
-    height: 500px;
+    height: 700px;
     width:50%;
 }
 
 .Empires-History{
-    height: 500px;
+    height: 700px;
     width:50%;
+}
+
+.Empires-Quote-Divider{
+    width: 100px;
+    height: 70%;
+    margin-top: 15%;
+    float: left;
+    border-left: dashed grey;
+}
+
+.Empires-Quote{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40%;
+    font-size: 180%;
+    color: grey;
+    float: left;
 }
 
 .Empires-History-details{
@@ -49,9 +100,9 @@ body{
     width: 80%;
     margin: 0 auto;
     margin-top: 5%;
-    background: rgb(15,15,15);
     background: linear-gradient(180deg, $dark-black 0%, $tint-black 100%);
     overflow-y: scroll;
+    box-shadow: 3px 3px 20px $dark-black;
 }
 
 .Empires-History-details-title{
@@ -72,9 +123,15 @@ body{
 .Empires-History-details-map{
     width: 80%;
     height: 140px;
-    border: solid red 2px;
+    border: solid white 0.5px;
     margin: 0 auto;
     margin-bottom: 20px;
+}
+
+.Empires-History-details-map-map{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .Empires-History-details-charts{
@@ -85,7 +142,17 @@ body{
     width: 33%;
     height: 100%;
     float:left;
-    border: solid red;
+}
+
+.Empires-Chart-placeholder{
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50px;
+    border: 10px solid red;
+    padding-top: 15%;
+    font-size: x-large;
 }
 
 .Empires-History-details-details{

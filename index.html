@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historic Empire Span</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300&display=swap"
+     rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -12,63 +14,132 @@
     <section class="section container">
         <div class="Empires-Header">
             <div class="Empires-Header-title">
-                <h4>Historic Empire Span</h4>
+                <h3 style="font-family: 'Source Sans Pro', sans-serif;">HISTORIC EMPIRE SPAN</h3>
                 <div class="Empires-Title-Underline"></div>
                 <p>
-                    A data Visualisation project on the Total
-                     landmass of Histories greatest Empires.  
-                     In this website you will learn about the geological 
-                     expansion of these Empires as well as a brief History on each one.  
+                    A data Visualisation project on the Total 
+                    landmass of Histories greatest Empires.  
+                    In this website you will learn about the geological 
+                    expanse of these Empires as well as a brief History on each one.  
                 </p>
             </div>
-            
+            <div class="Empires-Header-Nav">
+                <ul class="Empires-Header-Nav-Nav right">
+                    <li class="Empires-Header-Nav-Nav-item item-active">
+                        <a href="#" style="font-family: 'Source Sans Pro', sans-serif;">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="Empires-Header-Nav-Nav-item item-inactive">
+                        <a href="#" style="font-family: 'Source Sans Pro', sans-serif;">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li class="Empires-Header-Nav-Nav-item item-inactive">
+                        <a href="#" style="font-family: 'Source Sans Pro', sans-serif;">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <!--Main Section-->
-    <section class="section container">
+    <section class="section container Empires-Main">
         <div class="row">
-            <div class=" col Empires-Data green"></div>
-            <div class="col Empires-History">
+            <!--Data Viz section-->
+            <div class=" col Empires-Data">
+                <button class=" empire-button btn-large red darken-4">ROMAN</button>
+            </div>
+
+            <!--Famous Quote Section-->
+            <div id="quote" class="col Empires-History">
+                <div class="Empires-Quote-Divider"></div>
+                <div class="Empires-Quote">
+                    <p style="font-family: 'Source Sans Pro', sans-serif; font-style: italic;">“Great empires are not maintained by timidity.”</p>
+                    <p style="font-family: 'Source Sans Pro', sans-serif; font-style: italic;">― Tacitus</p>
+                </div>
+            </div>
+            
+            <!--Empire Details section-->
+            
+            <div id="Empires-History" class="col Empires-History" style="display: none;">
                 <div class="Empires-History-details">
                     <div class="Empires-History-details-title">
                         <div class="Empires-History-details-title-title">
-                            <h4>Roman Empire</h4>
+                            <h4 style="font-family: 'Source Sans Pro', sans-serif;">ROMAN EMPIRE</h4>
                         </div>
                         <div class="Empires-History-details-title-perc">
-                            <h4>28%</h4>
+                            <h4>3.7%</h4>
                         </div>
                     </div>
                     <div class="Empires-History-details-map">
-
+                        <img class="Empires-History-details-map-map" src="images/MAP_RomanEmpire.png" alt="">
                     </div>
                     <div class="Empires-History-details-charts">
                         <div class="Empires-History-details-charts-chart">
+                            <div class="Empires-Chart-placeholder">
+                                Xkm
+                            </div>
+                            <div class="center">Landmass</div>
                         </div>
                         <div class="Empires-History-details-charts-chart">
+                            <div class="Empires-Chart-placeholder">
+                                Xm
+                            </div>
+                            <div class="center">Populatuion</div>
                         </div>
                         <div class="Empires-History-details-charts-chart">
+                            <div class="Empires-Chart-placeholder">
+                                Xm
+                            </div>
+                            <div class="center">Wealth</div>
                         </div>
                     </div>
                     <div class="Empires-History-details-details">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, 
-                            adipisicing elit. Perferendis nostrum obcaecati 
-                            harum praesentium, minus eius magni, a fuga 
-                            quaerat fugiat voluptatem fugit, aperiam quibusdam 
-                            illo cum distinctio laborum! Repudiandae, quos 
-                            laboriosam! Alias corporis, enim minus debitis in 
-                            temporibus ipsa suscipit amet optio eligendi ipsum culpa 
-                            aliquam cum pariatur doloremque a?
+                            The Roman Empire (Latin: Imperium Romanum, 
+                            Classical Latin: [ɪmˈpɛri.ũː roːˈmaːnũː]; 
+                            Koinē Greek: Βασιλεία τῶν Ῥωμαίων, romanized: 
+                            Basileía tōn Rhōmaíōn) was the post-Republican 
+                            period of ancient Rome. As a polity it included 
+                            large territorial holdings around the Mediterranean 
+                            Sea in Europe, Northern Africa, and Western Asia 
+                            ruled by emperors. From the accession of Caesar 
+                            Augustus to the military anarchy of the third 
+                            century, it was a principate with Italy as 
+                            metropole of the provinces and the city of 
+                            Rome as sole capital (27 BC – 286 AD). Although 
+                            fragmented briefly during the military crisis, the 
+                            empire was forcibly reassembled, then ruled by multiple 
+                            emperors who shared rule over the Western Roman Empire 
+                            (based in Milan and later in Ravenna) and over the 
+                            Eastern Roman Empire (based in Nicomedia and later 
+                            in Constantinople). Rome remained the nominal 
+                            capital of both parts until 476 AD, when the 
+                            imperial insignia were sent to Constantinople, 
+                            following the capture of Ravenna by the barbarians 
+                            of Odoacer and the subsequent deposition of Romulus 
+                            Augustus. The fall of the Western Roman Empire to 
+                            Germanic kings, along with the hellenization of 
+                            the Eastern Roman Empire into the Byzantine Empire, 
+                            conventionally marks the end of Ancient Rome and the 
+                            beginning of the Middle Ages.
                         </p>
                     </div>
                 </div>
             </div>
+            
+
         </div>
     </section>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+     crossorigin="anonymous"></script>
     <script src="https://d3js.org/d3.v5.js"></script>
-    <script type="text/javascript" src="data.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
