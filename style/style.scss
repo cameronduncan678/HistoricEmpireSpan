@@ -176,3 +176,35 @@ body{
     margin: 0 auto;
     margin-bottom: 100px;
 }
+
+.about-article{
+    height: 500px;
+    margin-bottom: 60px;
+    box-shadow: 3px 3px 20px $dark-black;
+}
+
+.red-article{
+    background: linear-gradient(90deg, $shade-red 0%, $main-red 50%);
+}
+
+.dark-article{
+    background: linear-gradient(90deg, $tint-body 0%, $main-body 50%);
+}
+
+.article-half{
+    width: 40%;
+    height: 400px;
+    margin: 50px 5%;
+}
+
+.article-text{
+    font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 100px;
+}
+
+.article-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
