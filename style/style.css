@@ -8,9 +8,8 @@ body {
 }
 
 .Empires-Header {
-  height: 200px;
-  background: -webkit-gradient(linear, left top, right top, from(#b81b1b), to(#4f0f0f));
-  background: linear-gradient(90deg, #b81b1b 0%, #4f0f0f 100%);
+  height: 150px;
+  background: #b81b1b;
   padding-top: 0.1px;
   -webkit-box-shadow: 3px 3px 20px #0f0f0f;
           box-shadow: 3px 3px 20px #0f0f0f;
@@ -21,6 +20,15 @@ body {
   height: 100%;
   margin-left: 5%;
   float: left;
+}
+
+.Empires-Header-Description {
+  font-size: 23px;
+  padding: 10px 40px;
+  background: -webkit-gradient(linear, left top, right top, from(#2d2d2d), color-stop(50%, #181818));
+  background: linear-gradient(90deg, #2d2d2d 0%, #181818 50%);
+  -webkit-box-shadow: 3px 3px 20px #0f0f0f;
+          box-shadow: 3px 3px 20px #0f0f0f;
 }
 
 .Empires-Header-Nav {
@@ -47,9 +55,16 @@ body {
   background: #0f0f0f;
 }
 
+.item-active a {
+  color: white;
+}
+
 .item-inactive {
   background: transparent;
   border: solid #0f0f0f;
+}
+
+.item-inactive a {
   color: #0f0f0f;
 }
 
@@ -86,7 +101,7 @@ body {
   width: 80%;
   margin: 0 auto;
   margin-top: 40%;
-  font-size: 180%;
+  font-size: 30px;
   color: grey;
   float: left;
 }
@@ -141,6 +156,7 @@ body {
   width: 33%;
   height: 100%;
   float: left;
+  margin-left: 50px;
 }
 
 .Empires-Chart-placeholder {

@@ -11,32 +11,25 @@
 </head>
 <body>
     <!--Header Section-->
-    <section class="section container">
+    <section id="" class="section container">
         <div class="Empires-Header">
             <div class="Empires-Header-title">
                 <h3 style="font-family: 'Source Sans Pro', sans-serif;">HISTORIC EMPIRE SPAN</h3>
-                <div class="Empires-Title-Underline"></div>
-                <p>
-                    A data Visualisation project on the Total 
-                    landmass of Histories greatest Empires.  
-                    In this website you will learn about the geological 
-                    expanse of these Empires as well as a brief History on each one.  
-                </p>
             </div>
             <div class="Empires-Header-Nav">
                 <ul class="Empires-Header-Nav-Nav right">
-                    <li class="Empires-Header-Nav-Nav-item item-active">
-                        <a href="#" style="font-family: 'Source Sans Pro', sans-serif;">
+                    <li id="home-nav" class="Empires-Header-Nav-Nav-item item-active">
+                        <a  style="font-family: 'Source Sans Pro', sans-serif;">
                             HOME
                         </a>
                     </li>
-                    <li class="Empires-Header-Nav-Nav-item item-inactive">
-                        <a href="#" style="font-family: 'Source Sans Pro', sans-serif;">
+                    <li id="about-nav" class="Empires-Header-Nav-Nav-item item-inactive">
+                        <a  style="font-family: 'Source Sans Pro', sans-serif;">
                             ABOUT
                         </a>
                     </li>
-                    <li class="Empires-Header-Nav-Nav-item item-inactive">
-                        <a href="#" style="font-family: 'Source Sans Pro', sans-serif;">
+                    <li id="contact-nav" class="Empires-Header-Nav-Nav-item item-inactive">
+                        <a  style="font-family: 'Source Sans Pro', sans-serif;">
                             CONTACT
                         </a>
                     </li>
@@ -45,26 +38,38 @@
         </div>
     </section>
 
+    <section class="section container">
+        <div class="Empires-Header-Description">
+            <p>
+                A data Visualisation project on the Total landmass 
+                of Histories greatest Empires.  In this website you 
+                will learn about the geological expansion of these 
+                Empires as well as a brief History on each one.  
+            </p>
+        </div>
+    </section>
+
     <!--Main Section-->
-    <section class="section container Empires-Main">
+    <section id="home" class="section container Empires-Main">
         <div class="row">
             <!--Data Viz section-->
-            <div class=" col Empires-Data">
-                <button class=" empire-button btn-large red darken-4">ROMAN</button>
+            <div id="empire-data" class=" col Empires-Data">
+
             </div>
+            
 
             <!--Famous Quote Section-->
-            <div id="quote" class="col Empires-History">
+            <!-- <div id="quote" class="col Empires-History">
                 <div class="Empires-Quote-Divider"></div>
                 <div class="Empires-Quote">
                     <p style="font-family: 'Source Sans Pro', sans-serif; font-style: italic;">“Great empires are not maintained by timidity.”</p>
                     <p style="font-family: 'Source Sans Pro', sans-serif; font-style: italic;">― Tacitus</p>
                 </div>
-            </div>
+            </div> -->
             
             <!--Empire Details section-->
             
-            <div id="Empires-History" class="col Empires-History" style="display: none;">
+            <div id="ROMAN" class="col Empires-History">
                 <div class="Empires-History-details">
                     <div class="Empires-History-details-title">
                         <div class="Empires-History-details-title-title">
@@ -78,12 +83,6 @@
                         <img class="Empires-History-details-map-map" src="images/MAP_RomanEmpire.png" alt="">
                     </div>
                     <div class="Empires-History-details-charts">
-                        <div class="Empires-History-details-charts-chart">
-                            <div class="Empires-Chart-placeholder">
-                                Xkm
-                            </div>
-                            <div class="center">Landmass</div>
-                        </div>
                         <div class="Empires-History-details-charts-chart">
                             <div class="Empires-Chart-placeholder">
                                 Xm
@@ -133,6 +132,14 @@
             
 
         </div>
+    </section>
+
+    <section id="about" style="display:none">
+        <h1 class="center">ABOUT SECTION</h1>
+    </section>
+
+    <section id="contact" style="display:none">
+        <h1 class="center">CONTACT SECTION</h1>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" 
