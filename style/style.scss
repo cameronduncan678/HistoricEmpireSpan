@@ -14,10 +14,8 @@ body{
 }
 
 .Empires-Header{
-    height: 150px;
-    background: $main-red;
+    height: 100px;
     padding-top: 0.1px;
-    box-shadow: 3px 3px 20px $dark-black;
 }
 
 .Empires-Header-title{
@@ -55,21 +53,21 @@ body{
 }
 
 .item-active{
-    background: $dark-black;
+    background: white;
 }
 
 .item-active a{
-    color: white;
+    color: $dark-black;
 }
 
 .item-inactive{
     background: transparent;
-    border: solid $dark-black;
+    border: solid white;
     
 }
 
 .item-inactive a {
-    color: $dark-black;
+    color: white;
 }
 
 .Empires-Title-Underline{
@@ -207,4 +205,40 @@ body{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.contact-col{
+    width: 50%;
+    height: 500px;
+}
+
+.contact-header{
+   text-align: center;
+}
+
+.contact-contact{
+    margin-top: 50px;
+
+}
+
+.contact-contact-contact{
+    font-size: 20px;
+}
+
+.contact-tech{
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.contact-tech-tech{
+    height: 33%;
+    width: 100%;
+}
+
+.tech-logos{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    margin-top: 5%;
 }

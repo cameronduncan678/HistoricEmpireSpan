@@ -8,11 +8,8 @@ body {
 }
 
 .Empires-Header {
-  height: 150px;
-  background: #b81b1b;
+  height: 100px;
   padding-top: 0.1px;
-  -webkit-box-shadow: 3px 3px 20px #0f0f0f;
-          box-shadow: 3px 3px 20px #0f0f0f;
 }
 
 .Empires-Header-title {
@@ -52,20 +49,20 @@ body {
 }
 
 .item-active {
-  background: #0f0f0f;
+  background: white;
 }
 
 .item-active a {
-  color: white;
+  color: #0f0f0f;
 }
 
 .item-inactive {
   background: transparent;
-  border: solid #0f0f0f;
+  border: solid white;
 }
 
 .item-inactive a {
-  color: #0f0f0f;
+  color: white;
 }
 
 .Empires-Title-Underline {
@@ -210,5 +207,41 @@ body {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.contact-col {
+  width: 50%;
+  height: 500px;
+}
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-contact {
+  margin-top: 50px;
+}
+
+.contact-contact-contact {
+  font-size: 20px;
+}
+
+.contact-tech {
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+}
+
+.contact-tech-tech {
+  height: 33%;
+  width: 100%;
+}
+
+.tech-logos {
+  width: 90%;
+  height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 5%;
 }
 /*# sourceMappingURL=style.css.map */
