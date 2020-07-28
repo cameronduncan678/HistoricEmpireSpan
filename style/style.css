@@ -49,16 +49,18 @@ body {
 }
 
 .item-active {
-  background: white;
+  background: #b81b1b;
+  border: solid #b81b1b 1px;
+  -webkit-box-shadow: 3px 3px 20px #0f0f0f;
+          box-shadow: 3px 3px 20px #0f0f0f;
 }
 
 .item-active a {
-  color: #0f0f0f;
+  color: white;
 }
 
 .item-inactive {
   background: transparent;
-  border: solid white;
 }
 
 .item-inactive a {
@@ -79,6 +81,14 @@ body {
 .Empires-Data {
   height: 700px;
   width: 50%;
+}
+
+.Empire-Data-Cont {
+  width: 95%;
+  height: 90%;
+  margin-top: 5%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .Empires-History {
@@ -113,6 +123,7 @@ body {
   overflow-y: scroll;
   -webkit-box-shadow: 3px 3px 20px #0f0f0f;
           box-shadow: 3px 3px 20px #0f0f0f;
+  font-size: 20px;
 }
 
 .Empires-History-details-title {

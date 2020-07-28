@@ -53,17 +53,17 @@ body{
 }
 
 .item-active{
-    background: white;
+    background: $main-red;
+    border: solid $main-red 1px;
+    box-shadow: 3px 3px 20px $dark-black;
 }
 
 .item-active a{
-    color: $dark-black;
+    color: white;
 }
 
 .item-inactive{
     background: transparent;
-    border: solid white;
-    
 }
 
 .item-inactive a {
@@ -84,6 +84,14 @@ body{
 .Empires-Data{
     height: 700px;
     width:50%;
+}
+
+.Empire-Data-Cont{
+    width:95%;
+    height:90%;
+    margin-top: 5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .Empires-History{
@@ -116,6 +124,7 @@ body{
     background: linear-gradient(180deg, $dark-black 0%, $tint-black 100%);
     overflow-y: scroll;
     box-shadow: 3px 3px 20px $dark-black;
+    font-size: 20px;
 }
 
 .Empires-History-details-title{
