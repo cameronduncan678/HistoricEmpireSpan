@@ -26,6 +26,7 @@ body {
   background: linear-gradient(90deg, #2d2d2d 0%, #181818 50%);
   -webkit-box-shadow: 3px 3px 20px #0f0f0f;
           box-shadow: 3px 3px 20px #0f0f0f;
+  border-radius: 5px;
 }
 
 .Empires-Header-Nav {
@@ -128,6 +129,7 @@ body {
   -webkit-box-shadow: 3px 3px 20px #0f0f0f;
           box-shadow: 3px 3px 20px #0f0f0f;
   font-size: 20px;
+  border-radius: 5px;
 }
 
 .Empires-History-details-title {
@@ -193,6 +195,7 @@ body {
   margin-bottom: 60px;
   -webkit-box-shadow: 3px 3px 20px #0f0f0f;
           box-shadow: 3px 3px 20px #0f0f0f;
+  border-radius: 5px;
 }
 
 .red-article {

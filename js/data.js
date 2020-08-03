@@ -1,14 +1,17 @@
+//Qoute and card status
+var cardVisible = false;
+
 //Function for dynamic SVG canvas height
 function svgCanvasHeight(dataArray) {
   return dataArray.length * 65 + 20;
 }
 
 d3.csv('../data/empireData.csv').then((data) => {
+  console.log(data);
   data.forEach((el) => {
-    el.MaximumlandareaPerc = Number(el.MaximumlandareaPerc);
+    el.span = Number(el.span);
   });
 
-  console.log(data);
   const canvasWidth = 585;
   const canvasHeight = svgCanvasHeight(data);
 
@@ -30,8 +33,20 @@ d3.csv('../data/empireData.csv').then((data) => {
     .attr('y', (d, i) => {
       return i * 65;
     })
-    .attr('fill', 'grey')
-    .classed('background', true);
+    .attr('fill', 'rgb(59, 59, 59)')
+    .classed('background', true)
+
+    //Card onclick logic
+    .on('click', function (data) {
+      if (!cardVisible) {
+        cardVisible = true;
+        $('#quote').slideUp();
+        $('#HistoryCard').slideDown();
+      }
+      $('#historyCard-title').html(data.name);
+      $('#historyCard-span').html(data.span + '%');
+      $('#historyCard-text').html(data.history);
+    });
 
   const redRects = svg.selectAll('rect.colorBar').data(data);
 
@@ -43,8 +58,20 @@ d3.csv('../data/empireData.csv').then((data) => {
     .attr('y', (d, i) => {
       return i * 65;
     })
-    .attr('fill', 'red')
-    .classed('colorBar', true);
+    .attr('fill', 'rgba(184,27,27,1)')
+    .classed('colorBar', true)
+
+    //Card onclick logic
+    .on('click', function (data) {
+      if (!cardVisible) {
+        cardVisible = true;
+        $('#quote').slideUp();
+        $('#HistoryCard').slideDown();
+      }
+      $('#historyCard-title').html(data.name);
+      $('#historyCard-span').html(data.span + '%');
+      $('#historyCard-text').html(data.history);
+    });
 
   const dataNames = svg.selectAll('text').data(data);
 
@@ -52,10 +79,23 @@ d3.csv('../data/empireData.csv').then((data) => {
     .enter()
     .append('text')
     .attr('text-anchor', 'end')
-    .attr('x', 550)
+    .attr('x', 540)
     .attr('y', (d, i) => {
       return (i + 0.4) * 65;
     })
     .text((d) => d.name)
-    .attr('fill', 'white');
+    .attr('font-size', '20px')
+    .attr('fill', 'white')
+
+    //Card onclick logic
+    .on('click', function (data) {
+      if (!cardVisible) {
+        cardVisible = true;
+        $('#quote').slideUp();
+        $('#HistoryCard').slideDown();
+      }
+      $('#historyCard-title').html(data.name);
+      $('#historyCard-span').html(data.span + '%');
+      $('#historyCard-text').html(data.history);
+    });
 });

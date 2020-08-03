@@ -1,257 +1,259 @@
 /*Color*/
-$main-body: rgb(24,24,24);
-$tint-body: rgb(45,45,45);
-$main-red: rgba(184,27,27,1);
-$shade-red: rgba(79,15,15,1);
-$dark-black:rgb(15,15,15);
-$tint-black:rgb(59, 59, 59);
+$main-body: rgb(24, 24, 24);
+$tint-body: rgb(45, 45, 45);
+$main-red: rgba(184, 27, 27, 1);
+$shade-red: rgba(79, 15, 15, 1);
+$dark-black: rgb(15, 15, 15);
+$tint-black: rgb(59, 59, 59);
 
-body{
-    background: $main-body;
-    background: linear-gradient(90deg, $main-body 0%, $tint-body 50%);
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif;
+body {
+  background: $main-body;
+  background: linear-gradient(90deg, $main-body 0%, $tint-body 50%);
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.Empires-Header{
-    height: 100px;
-    padding-top: 0.1px;
+.Empires-Header {
+  height: 100px;
+  padding-top: 0.1px;
 }
 
-.Empires-Header-title{
-    width: 40%;
-    height: 100%;
-    margin-left: 5%;
-    float: left;
+.Empires-Header-title {
+  width: 40%;
+  height: 100%;
+  margin-left: 5%;
+  float: left;
 }
 
-.Empires-Header-Description{
-    font-size: 23px;
-    padding: 10px 40px;
-    background: linear-gradient(90deg, $tint-body 0%, $main-body 50%);
-    box-shadow: 3px 3px 20px $dark-black;
+.Empires-Header-Description {
+  font-size: 23px;
+  padding: 10px 40px;
+  background: linear-gradient(90deg, $tint-body 0%, $main-body 50%);
+  box-shadow: 3px 3px 20px $dark-black;
+  border-radius: 5px;
 }
 
-.Empires-Header-Nav{
-    width: 50%;
-    height: 100%;
-    float: left;
+.Empires-Header-Nav {
+  width: 50%;
+  height: 100%;
+  float: left;
 }
 
-.Empires-Header-Nav-Nav{
-    margin-right: 30px;
-    margin-top: 30px;
+.Empires-Header-Nav-Nav {
+  margin-right: 30px;
+  margin-top: 30px;
 }
 
-.Empires-Header-Nav-Nav-item{
-    float: left;
-    font-size: x-large;
-    margin-left: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 50px;
+.Empires-Header-Nav-Nav-item {
+  float: left;
+  font-size: x-large;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px;
 }
 
-.item-active{
-    background: $main-red;
-    border: solid $main-red 1px;
-    box-shadow: 3px 3px 20px $dark-black;
+.item-active {
+  background: $main-red;
+  border: solid $main-red 1px;
+  box-shadow: 3px 3px 20px $dark-black;
 }
 
-.item-active a{
-    color: white;
+.item-active a {
+  color: white;
 }
 
-.item-inactive{
-    background: transparent;
+.item-inactive {
+  background: transparent;
 }
 
 .item-inactive a {
-    color: white;
+  color: white;
 }
 
-.Empires-Title-Underline{
-    border-top: solid $dark-black 5px;
-    height: 1px;
-    border-radius:50px;
+.Empires-Title-Underline {
+  border-top: solid $dark-black 5px;
+  height: 1px;
+  border-radius: 50px;
 }
 
-.Empires-Nav{
-    width: 300px;
-    height: 100%;
+.Empires-Nav {
+  width: 300px;
+  height: 100%;
 }
 
-.Empires-Data{
-    height: 700px;
-    width:50%;
+.Empires-Data {
+  height: 700px;
+  width: 50%;
 }
 
-.Empire-Data-Cont{
-    width:95%;
-    height:90%;
-    margin-top: 5%;
-    overflow-y: scroll;
-    overflow-x: hidden;
+.Empire-Data-Cont {
+  width: 95%;
+  height: 90%;
+  margin-top: 5%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.background-style{
-    color: linear-gradient(90deg, grey 0%, darkgrey 100%);
+.background-style {
+  color: linear-gradient(90deg, grey 0%, darkgrey 100%);
 }
 
-.Empires-History{
-    height: 700px;
-    width:50%;
+.Empires-History {
+  height: 700px;
+  width: 50%;
 }
 
-.Empires-Quote-Divider{
-    width: 100px;
-    height: 70%;
-    margin-top: 15%;
-    float: left;
-    border-left: dashed grey;
+.Empires-Quote-Divider {
+  width: 100px;
+  height: 70%;
+  margin-top: 15%;
+  float: left;
+  border-left: dashed grey;
 }
 
-.Empires-Quote{
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 40%;
-    font-size: 30px;
-    color: grey;
-    float: left;
+.Empires-Quote {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40%;
+  font-size: 30px;
+  color: grey;
+  float: left;
 }
 
-.Empires-History-details{
-    height: 90%;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 5%;
-    background: linear-gradient(180deg, $dark-black 0%, $tint-black 100%);
-    overflow-y: scroll;
-    box-shadow: 3px 3px 20px $dark-black;
-    font-size: 20px;
+.Empires-History-details {
+  height: 90%;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+  background: linear-gradient(180deg, $dark-black 0%, $tint-black 100%);
+  overflow-y: scroll;
+  box-shadow: 3px 3px 20px $dark-black;
+  font-size: 20px;
+  border-radius: 5px;
 }
 
-.Empires-History-details-title{
-    padding: 5px;
-    margin-left: 20px;
-    height: 100px;
+.Empires-History-details-title {
+  padding: 5px;
+  margin-left: 20px;
+  height: 100px;
 }
 
-.Empires-History-details-title-title{
-    float:left;
+.Empires-History-details-title-title {
+  float: left;
 }
 
-.Empires-History-details-title-perc{
-    float:right;
-    margin-right: 20px;
+.Empires-History-details-title-perc {
+  float: right;
+  margin-right: 20px;
 }
 
-.Empires-History-details-map{
-    width: 80%;
-    height: 140px;
-    border: solid white 0.5px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+.Empires-History-details-map {
+  width: 80%;
+  height: 140px;
+  border: solid white 0.5px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-.Empires-History-details-map-map{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.Empires-History-details-map-map {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.Empires-History-details-charts{
-    height: 130px;
+.Empires-History-details-charts {
+  height: 130px;
 }
 
-.Empires-History-details-charts-chart{
-    width: 33%;
-    height: 100%;
-    float:left;
-    margin-left: 50px;
+.Empires-History-details-charts-chart {
+  width: 33%;
+  height: 100%;
+  float: left;
+  margin-left: 50px;
 }
 
-.Empires-Chart-placeholder{
-    width: 70%;
-    height: 80%;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 50px;
-    border: 10px solid red;
-    padding-top: 15%;
-    font-size: x-large;
+.Empires-Chart-placeholder {
+  width: 70%;
+  height: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 50px;
+  border: 10px solid red;
+  padding-top: 15%;
+  font-size: x-large;
 }
 
-.Empires-History-details-details{
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 100px;
+.Empires-History-details-details {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
 
-.about-article{
-    height: 500px;
-    margin-bottom: 60px;
-    box-shadow: 3px 3px 20px $dark-black;
+.about-article {
+  height: 500px;
+  margin-bottom: 60px;
+  box-shadow: 3px 3px 20px $dark-black;
+  border-radius: 5px;
 }
 
-.red-article{
-    background: linear-gradient(90deg, $shade-red 0%, $main-red 50%);
+.red-article {
+  background: linear-gradient(90deg, $shade-red 0%, $main-red 50%);
 }
 
-.dark-article{
-    background: linear-gradient(90deg, $tint-body 0%, $main-body 50%);
+.dark-article {
+  background: linear-gradient(90deg, $tint-body 0%, $main-body 50%);
 }
 
-.article-half{
-    width: 40%;
-    height: 400px;
-    margin: 50px 5%;
+.article-half {
+  width: 40%;
+  height: 400px;
+  margin: 50px 5%;
 }
 
-.article-text{
-    font-size: 30px;
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 100px;
+.article-text {
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 100px;
 }
 
-.article-img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.article-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.contact-col{
-    width: 50%;
-    height: 500px;
+.contact-col {
+  width: 50%;
+  height: 500px;
 }
 
-.contact-header{
-   text-align: center;
+.contact-header {
+  text-align: center;
 }
 
-.contact-contact{
-    margin-top: 50px;
-
+.contact-contact {
+  margin-top: 50px;
 }
 
-.contact-contact-contact{
-    font-size: 20px;
+.contact-contact-contact {
+  font-size: 20px;
 }
 
-.contact-tech{
-    width: 90%;
-    height: 80%;
-    margin: 0 auto;
+.contact-tech {
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
 }
 
-.contact-tech-tech{
-    height: 33%;
-    width: 100%;
+.contact-tech-tech {
+  height: 33%;
+  width: 100%;
 }
 
-.tech-logos{
-    width: 90%;
-    height: 90%;
-    object-fit: contain;
-    margin-top: 5%;
+.tech-logos {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  margin-top: 5%;
 }
