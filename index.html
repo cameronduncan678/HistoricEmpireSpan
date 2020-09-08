@@ -18,40 +18,42 @@
     <!--Header Section-->
     <section id="" class="section container">
       <div class="Empires-Header">
-        <div class="Empires-Header-title">
-          <h3
-            style="
-              font-family: 'Source Sans Pro', sans-serif;
-              font-style: italic;
-            "
-          >
-            HISTORIC EMPIRE SPAN
-          </h3>
-        </div>
-        <div class="Empires-Header-Nav">
-          <ul class="Empires-Header-Nav-Nav right">
-            <li id="home-nav" class="Empires-Header-Nav-Nav-item item-active">
-              <a style="font-family: 'Source Sans Pro', sans-serif;">
-                HOME
-              </a>
-            </li>
-            <li
-              id="about-nav"
-              class="Empires-Header-Nav-Nav-item item-inactive"
+        <div class="row">
+          <div class="Empires-Header-title col m6 s12">
+            <h3
+              style="
+                font-family: 'Source Sans Pro', sans-serif;
+                font-style: italic;
+                font-size: 250%;
+                text-align: center;
+              "
             >
-              <a style="font-family: 'Source Sans Pro', sans-serif;">
-                ABOUT
-              </a>
-            </li>
-            <li
-              id="contact-nav"
-              class="Empires-Header-Nav-Nav-item item-inactive"
-            >
-              <a style="font-family: 'Source Sans Pro', sans-serif;">
-                CONTACT
-              </a>
-            </li>
-          </ul>
+              HISTORIC EMPIRE SPAN
+            </h3>
+          </div>
+          <div class="Empires-Header-Nav col m6 s12">
+            <ul class="Empires-Header-Nav-Nav right">
+              <li id="home-nav" class="Empires-Header-Nav-Nav-item item-active">
+                <a style="font-family: 'Source Sans Pro', sans-serif"> HOME </a>
+              </li>
+              <li
+                id="about-nav"
+                class="Empires-Header-Nav-Nav-item item-inactive"
+              >
+                <a style="font-family: 'Source Sans Pro', sans-serif">
+                  ABOUT
+                </a>
+              </li>
+              <li
+                id="contact-nav"
+                class="Empires-Header-Nav-Nav-item item-inactive"
+              >
+                <a style="font-family: 'Source Sans Pro', sans-serif">
+                  CONTACT
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -70,14 +72,14 @@
 
       <div class="row">
         <!--Data Viz section-->
-        <div class="col Empires-Data">
+        <div class="col Empires-Data m6 s12">
           <div class="Empire-Data-Cont">
             <svg id="data-canvas"></svg>
           </div>
         </div>
 
         <!-- Famous Quote Section-->
-        <div id="quote" class="col Empires-History">
+        <div id="quote" class="col Empires-History m6 s12">
           <div class="Empires-Quote-Divider"></div>
           <div class="Empires-Quote">
             <p
@@ -101,17 +103,13 @@
 
         <!--Empire Details section -->
 
-        <div
-          id="HistoryCard"
-          class="col Empires-History"
-          style="display: none;"
-        >
+        <div id="HistoryCard" class="col Empires-History" style="display: none">
           <div class="Empires-History-details">
             <div class="Empires-History-details-title">
               <div class="Empires-History-details-title-title">
                 <h4
                   id="historyCard-title"
-                  style="font-family: 'Source Sans Pro', sans-serif;"
+                  style="font-family: 'Source Sans Pro', sans-serif"
                 >
                   ROMAN EMPIRE
                 </h4>
@@ -130,15 +128,11 @@
             </div>
             <div class="Empires-History-details-charts">
               <div class="Empires-History-details-charts-chart">
-                <div class="Empires-Chart-placeholder">
-                  Xm
-                </div>
+                <div class="Empires-Chart-placeholder">Xm</div>
                 <div class="center">Populatuion</div>
               </div>
               <div class="Empires-History-details-charts-chart">
-                <div class="Empires-Chart-placeholder">
-                  Xm
-                </div>
+                <div class="Empires-Chart-placeholder">Xm</div>
                 <div class="center">Wealth</div>
               </div>
             </div>
@@ -152,57 +146,61 @@
       </div>
     </section>
 
-    <section id="about" class="container" style="display: none;">
+    <!--About Page-->
+    <section id="about" class="container" style="display: none">
       <div class="about-article red-article">
         <div class="row">
-          <div class="article-half col">
-            <p class="article-text">
-              History is full of incredible stories. The best of these come from
-              the amazing people who founded the largest empires this planet has
-              known.
-            </p>
+          <div class="col m6 s12">
+            <div class="article-text-box">
+              <p class="article-text">
+                History is full of incredible stories. The best of these come
+                from the amazing people who founded the largest empires this
+                planet has known.
+              </p>
+            </div>
           </div>
-          <div class="article-half col">
-            <img class="article-img" src="images/BritEmp-graphic_01.png" />
+          <div class="col m6 s12 article-img">
+            <img src="images/BritEmp-graphic_01.png" />
           </div>
         </div>
       </div>
       <div class="about-article dark-article">
         <div class="row">
-          <div class="col article-half">
-            <img
-              class="article-img"
-              src="images/RomEmp-Graphic_01.png"
-              alt=""
-            />
+          <div class="col m6 s12 article-img">
+            <img src="images/RomEmp-Graphic_01.png" alt="" />
           </div>
-          <div class="col article-half">
-            <p class="article-text">
-              This Website explores those empires to determine just how large
-              these empires where. Alongside This we analyse the wealth
-              population and give a brief history of the Empire too.
-            </p>
+          <div class="col m6 s12">
+            <div class="article-text-box">
+              <p class="article-text">
+                This Website explores those empires to determine just how large
+                these empires where. Alongside This we analyse the wealth
+                population and give a brief history of the Empire too.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="about-article red-article">
         <div class="row">
-          <div class="col article-half">
-            <p class="article-text">
-              Using modern Data driven Technology this website brings the
-              fascinating history of these Empires into the Digital Sphere
-            </p>
+          <div class="col m6 s12">
+            <div class="article-text-box">
+              <p class="article-text">
+                Using modern Data driven Technology this website brings the
+                fascinating history of these Empires into the Digital Sphere
+              </p>
+            </div>
           </div>
-          <div class="col article-half">
-            <img class="article-img" src="images/kublai_art_01.png" />
+          <div class="col m6 s12 article-img">
+            <img src="images/kublai_art_01.png" />
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" style="display: none;" class="section container">
+    <!--Contact Page-->
+    <section id="contact" style="display: none" class="section container">
       <div class="row">
-        <div class="col contact-col">
+        <div class="col s12 m6 contact-col">
           <h4 class="">Contact info</h4>
           <div class="contact-contact">
             <p class="contact-contact-contact">
@@ -214,7 +212,7 @@
             </p>
           </div>
         </div>
-        <div class="col contact-col">
+        <div class="col s12 m6 contact-col">
           <h4 class="contact-header">Tech used</h4>
           <div class="contact-tech">
             <div class="contact-tech-tech">
