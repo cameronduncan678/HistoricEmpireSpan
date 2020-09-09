@@ -16,7 +16,6 @@ body {
   width: 40%;
   height: 100%;
   margin-left: 5%;
-  float: left;
 }
 
 .Empires-Header-Description {
@@ -99,7 +98,7 @@ body {
 
 .Empires-History {
   height: 700px;
-  width: 50%;
+  width: 90%;
 }
 
 .Empires-Quote-Divider {
@@ -116,12 +115,11 @@ body {
   margin-top: 40%;
   font-size: 30px;
   color: grey;
-  float: left;
 }
 
 .Empires-History-details {
   height: 90%;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 5%;
   background: -webkit-gradient(linear, left top, left bottom, from(#0f0f0f), to(#3b3b3b));
@@ -129,7 +127,7 @@ body {
   overflow-y: scroll;
   -webkit-box-shadow: 3px 3px 20px #0f0f0f;
           box-shadow: 3px 3px 20px #0f0f0f;
-  font-size: 20px;
+  font-size: 160%;
   border-radius: 5px;
 }
 
