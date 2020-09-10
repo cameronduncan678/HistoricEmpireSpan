@@ -53,7 +53,7 @@ d3.csv('../data/empireData.csv').then((data) => {
   redRects
     .enter()
     .append('rect')
-    .attr('width', (d) => x_scale(d.span))
+    .attr('width', 0)
     .attr('height', 40)
     .attr('y', (d, i) => {
       return i * 65;
@@ -71,7 +71,10 @@ d3.csv('../data/empireData.csv').then((data) => {
       $('#historyCard-title').html(data.name);
       $('#historyCard-span').html(data.span + '%');
       $('#historyCard-text').html(data.history);
-    });
+    })
+    .transition()
+    .duration(700)
+    .attr('width', (d) => x_scale(d.span));
 
   const dataNames = svg.selectAll('text').data(data);
 
