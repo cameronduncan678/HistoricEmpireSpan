@@ -19,7 +19,7 @@
     <section id="" class="section container">
       <div class="Empires-Header">
         <div class="row">
-          <div class="Empires-Header-title col m6 s12">
+          <div class="Empires-Header-title col s12 m6">
             <h3
               style="
                 font-family: 'Source Sans Pro', sans-serif;
@@ -30,7 +30,7 @@
               HISTORIC EMPIRE SPAN
             </h3>
           </div>
-          <div class="Empires-Header-Nav col m6 s12">
+          <div class="Empires-Header-Nav col s12 m6">
             <ul class="Empires-Header-Nav-Nav right">
               <li id="home-nav" class="Empires-Header-Nav-Nav-item item-active">
                 <a style="font-family: 'Source Sans Pro', sans-serif"> HOME </a>
@@ -66,6 +66,7 @@
           A data Visualisation project on the Total landmass of Histories
           greatest Empires. In this website you will learn about the geological
           expansion of these Empires as well as a brief History on each one.
+          Click on an empire bar to start.
         </p>
       </div>
 
@@ -74,6 +75,9 @@
         <div class="col Empires-Data m6 s12">
           <div class="Empire-Data-Cont">
             <svg id="data-canvas"></svg>
+          </div>
+          <div class="Empires-Data-details">
+            <p>Landmass of Empires % of half world landmass</p>
           </div>
         </div>
 
@@ -110,17 +114,29 @@
           style="display: none"
         >
           <div class="Empires-History-details">
-            <div class="Empires-History-details-title">
-              <div class="Empires-History-details-title-title">
-                <h4 id="historyCard-title">ROMAN EMPIRE</h4>
+            <div class="Empires-History-details-title row">
+              <div class="Empires-History-details-title-title col">
+                <h4 id="historyCard-title" class="historyCard-title">
+                  %Empire Name%
+                </h4>
               </div>
-              <div class="Empires-History-details-title-perc">
+              <div class="Empires-History-details-title-perc col">
                 <h4 id="historyCard-span">%Span%</h4>
               </div>
             </div>
-            <div id="historyCard-pop"></div>
-            <div class="Empires-History-details-details">
-              <p id="historyCard-text">
+            <div class="historyCard-pop row">
+              <div class="historyCard-pop-graph purple"></div>
+              <div class="historyCard-pop-details">
+                <p class="historyCard-pop-details-text center">
+                  Population by % of half 2020 population
+                </p>
+              </div>
+            </div>
+            <div class="Empires-History-details-details row">
+              <p
+                id="historyCard-text"
+                class="Empires-History-details-details-text col s12"
+              >
                 %Text placeholder: History of Empire text here%
               </p>
             </div>
@@ -189,7 +205,7 @@
             <p class="contact-contact-contact">
               email: cameronduncan678@gmail.com
             </p>
-            <p class="contact-contact-contact">number: (+44) 07885 971 152</p>
+            <p class="contact-contact-contact">number: (+44) 7885 971 152</p>
             <p class="contact-contact-contact">
               GitHub: https://github.com/cameronduncan678
             </p>

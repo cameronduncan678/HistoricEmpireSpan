@@ -13,6 +13,19 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background: $dark-black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $main-red;
+  border-radius: 50px;
+}
+
 .Empires-Header {
   height: 100px;
   padding-top: 0.1px;
@@ -46,11 +59,12 @@ body {
 .Empires-Header-Nav-Nav-item {
   font-size: x-large;
   margin-left: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 50px;
   cursor: pointer;
   display: inline-block;
+  float: left;
 }
 
 .item-active {
@@ -83,7 +97,7 @@ body {
 }
 
 .Empires-Data {
-  height: 700px;
+  height: 600px;
   width: 50%;
 }
 
@@ -93,6 +107,26 @@ body {
   margin-top: 5%;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.Empire-Data-Cont::-webkit-scrollbar {
+  width: 10px;
+}
+
+.Empire-Data-Cont::-webkit-scrollbar-track {
+  background: $dark-black;
+  border-radius: 50px;
+}
+
+.Empire-Data-Cont::-webkit-scrollbar-thumb {
+  background: $main-red;
+  border-radius: 50px;
+}
+
+.Empires-Data-details {
+  height: 100px;
+  font-size: large;
+  padding: 10px;
 }
 
 .background-style {
@@ -130,6 +164,21 @@ body {
   box-shadow: 3px 3px 20px $dark-black;
   font-size: 160%;
   border-radius: 5px;
+  overflow-x: hidden;
+}
+
+.Empires-History-details::-webkit-scrollbar {
+  width: 10px;
+}
+
+.Empires-History-details::-webkit-scrollbar-track {
+  background: $dark-black;
+  border-radius: 50px;
+}
+
+.Empires-History-details::-webkit-scrollbar-thumb {
+  background: $main-red;
+  border-radius: 50px;
 }
 
 .Empires-History-details-title {
@@ -147,8 +196,26 @@ body {
   margin-left: 20px;
 }
 
-#historyCard-title {
+.historyCard-title {
   font-size: 150%;
+}
+
+.historyCard-pop {
+  height: 300px;
+}
+
+.historyCard-pop-graph {
+  height: 250px;
+}
+
+.historyCard-pop-details {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.historyCard-pop-details-text {
+  padding: 10px;
+  font-size: smaller;
 }
 
 .Empires-History-details-map {
@@ -188,9 +255,12 @@ body {
 }
 
 .Empires-History-details-details {
-  width: 80%;
   margin: 0 auto;
   margin-bottom: 100px;
+  padding: 30px;
+}
+
+.Empires-History-details-details-text {
 }
 
 .about-article {

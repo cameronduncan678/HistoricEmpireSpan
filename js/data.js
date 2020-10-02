@@ -17,11 +17,13 @@ d3.csv('../data/empireData.csv').then((data) => {
 
   const svg = d3
     .select('#data-canvas')
-    .attr('width', canvasWidth)
-    .attr('height', canvasHeight);
+    .attr('viewBox', `0,0,${canvasWidth}, ${canvasHeight}`);
 
   //Scales
   var x_scale = d3.scaleLinear().domain([0, 50]).range([0, 585]);
+
+  //Pop Data variable
+  var popTotal = 0;
 
   const greyRects = svg.selectAll('rect.background').data(data);
 
