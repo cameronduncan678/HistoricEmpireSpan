@@ -1,252 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Historic Empire Span</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
-  <body>
-    <!--Header Section-->
-    <section id="" class="section container">
-      <div class="Empires-Header">
-        <div class="row">
-          <div class="Empires-Header-title col s12 m6">
-            <h3
-              style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historic Empire Span</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <!--Header Section-->
+  <section id="" class="section container">
+    <div class="Empires-Header">
+      <div class="row">
+        <div class="Empires-Header-title col s12 m6">
+          <h3 style="
                 font-family: 'Source Sans Pro', sans-serif;
                 font-style: italic;
                 font-size: 250%;
-              "
-            >
-              HISTORIC EMPIRE SPAN
-            </h3>
-          </div>
-          <div class="Empires-Header-Nav col s12 m6">
-            <ul class="Empires-Header-Nav-Nav right">
-              <li id="home-nav" class="Empires-Header-Nav-Nav-item item-active">
-                <a style="font-family: 'Source Sans Pro', sans-serif"> HOME </a>
-              </li>
-              <li
-                id="about-nav"
-                class="Empires-Header-Nav-Nav-item item-inactive"
-              >
-                <a style="font-family: 'Source Sans Pro', sans-serif">
-                  ABOUT
-                </a>
-              </li>
-              <li
-                id="contact-nav"
-                class="Empires-Header-Nav-Nav-item item-inactive"
-              >
-                <a style="font-family: 'Source Sans Pro', sans-serif">
-                  CONTACT
-                </a>
-              </li>
-            </ul>
-          </div>
+              ">
+            HISTORIC EMPIRE SPAN
+          </h3>
+        </div>
+        <div class="Empires-Header-Nav col s12 m6">
+          <ul class="Empires-Header-Nav-Nav right">
+            <li id="home-nav" class="Empires-Header-Nav-Nav-item item-active">
+              <a style="font-family: 'Source Sans Pro', sans-serif"> HOME </a>
+            </li>
+            <li id="about-nav" class="Empires-Header-Nav-Nav-item item-inactive">
+              <a style="font-family: 'Source Sans Pro', sans-serif">
+                ABOUT
+              </a>
+            </li>
+            <li id="contact-nav" class="Empires-Header-Nav-Nav-item item-inactive">
+              <a style="font-family: 'Source Sans Pro', sans-serif">
+                CONTACT
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section container"></section>
+  <section class="section container"></section>
 
-    <!--Main Section-->
-    <section id="home" class="section container Empires-Main">
-      <div class="Empires-Header-Description">
-        <p>
-          A data Visualisation project on the Total landmass of Histories
-          greatest Empires. In this website you will learn about the geological
-          expansion of these Empires as well as a brief History on each one.
-          Click on an empire bar to start.
-        </p>
+  <!--Main Section-->
+  <section id="home" class="section container Empires-Main">
+    <div class="Empires-Header-Description">
+      <p>
+        A data Visualisation project on the Total landmass of Histories
+        greatest Empires. In this website you will learn about the geological
+        expansion of these Empires as well as a brief History on each one.
+        Click on an empire bar to start.
+      </p>
+    </div>
+
+    <div class="row">
+      <!--Data Viz section-->
+      <div class="col Empires-Data m6 s12">
+        <div class="Empire-Data-Cont">
+          <svg id="data-canvas"></svg>
+        </div>
+        <div class="Empires-Data-details">
+          <p>Landmass of Empires % of half world landmass</p>
+        </div>
       </div>
 
-      <div class="row">
-        <!--Data Viz section-->
-        <div class="col Empires-Data m6 s12">
-          <div class="Empire-Data-Cont">
-            <svg id="data-canvas"></svg>
-          </div>
-          <div class="Empires-Data-details">
-            <p>Landmass of Empires % of half world landmass</p>
-          </div>
-        </div>
-
-        <!-- Famous Quote Section-->
-        <div id="quote" class="col Empires-History m6 s12">
-          <div class="Empires-Quote-Divider"></div>
-          <div class="Empires-Quote">
-            <p
-              id="quote-text-quote"
-              style="
+      <!-- Famous Quote Section-->
+      <div id="quote" class="col Empires-History m6 s12">
+        <div class="Empires-Quote-Divider"></div>
+        <div class="Empires-Quote">
+          <p id="quote-text-quote" style="
                 font-family: 'Source Sans Pro', sans-serif;
                 font-style: italic;
-              "
-            >
-              “Great empires are not maintained by timidity.”
-            </p>
-            <p
-              id="quote-text-name"
-              style="
+              ">
+            “Great empires are not maintained by timidity.”
+          </p>
+          <p id="quote-text-name" style="
                 font-family: 'Source Sans Pro', sans-serif;
                 font-style: italic;
-              "
-            >
-              ― Tacitus
-            </p>
-          </div>
+              ">
+            ― Tacitus
+          </p>
         </div>
+      </div>
 
-        <!--Empire Details section -->
+      <!--Empire Details section -->
 
-        <div
-          id="HistoryCard"
-          class="col m6 s12 Empires-History"
-          style="display: none"
-        >
-          <div class="Empires-History-details">
-            <div class="Empires-History-details-title row">
-              <div class="Empires-History-details-title-title col">
-                <h4 id="historyCard-title" class="historyCard-title">
-                  %Empire Name%
-                </h4>
-              </div>
-              <div class="Empires-History-details-title-perc col">
-                <h4 id="historyCard-span">%Span%</h4>
-              </div>
+      <div id="HistoryCard" class="col m6 s12 Empires-History" style="display: none">
+        <div class="Empires-History-details">
+          <div class="Empires-History-details-title row">
+            <div class="Empires-History-details-title-title col">
+              <h4 id="historyCard-title" class="historyCard-title">
+                %Empire Name%
+              </h4>
             </div>
-            <div class="historyCard-pop row">
-              <div class="historyCard-pop-graph purple"></div>
+            <div class="Empires-History-details-title-perc col">
+              <h4 id="historyCard-span">%Span%</h4>
+            </div>
+          </div>
+          <!-- <div class="historyCard-pop row">
+              <div class="historyCard-pop-graph"></div>
               <div class="historyCard-pop-details">
                 <p class="historyCard-pop-details-text center">
                   Population by % of half 2020 population
                 </p>
               </div>
-            </div>
-            <div class="Empires-History-details-details row">
-              <p
-                id="historyCard-text"
-                class="Empires-History-details-details-text col s12"
-              >
-                %Text placeholder: History of Empire text here%
-              </p>
-            </div>
+            </div> -->
+          <div class="Empires-History-details-details row">
+            <p id="historyCard-text" class="Empires-History-details-details-text col s12">
+              %Text placeholder: History of Empire text here%
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--About Page-->
-    <section id="about" class="container" style="display: none">
-      <div class="about-article red-article">
-        <div class="row">
-          <div class="col m6 s12">
-            <div class="article-text-box">
-              <p class="article-text">
-                History is full of incredible stories. The best of these come
-                from the amazing people who founded the largest empires this
-                planet has known.
-              </p>
-            </div>
-          </div>
-          <div class="col m6 s12 article-img">
-            <img src="images/BritEmp-graphic_01.png" />
-          </div>
-        </div>
-      </div>
-      <div class="about-article dark-article">
-        <div class="row">
-          <div class="col m6 s12 article-img">
-            <img src="images/RomEmp-Graphic_01.png" alt="" />
-          </div>
-          <div class="col m6 s12">
-            <div class="article-text-box">
-              <p class="article-text">
-                This Website explores those empires to determine just how large
-                these empires where. Alongside This we analyse the wealth
-                population and give a brief history of the Empire too.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="about-article red-article">
-        <div class="row">
-          <div class="col m6 s12">
-            <div class="article-text-box">
-              <p class="article-text">
-                Using modern Data driven Technology this website brings the
-                fascinating history of these Empires into the Digital Sphere
-              </p>
-            </div>
-          </div>
-          <div class="col m6 s12 article-img">
-            <img src="images/kublai_art_01.png" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Contact Page-->
-    <section id="contact" style="display: none" class="section container">
+  <!--About Page-->
+  <section id="about" class="container" style="display: none">
+    <div class="about-article red-article">
       <div class="row">
-        <div class="col s12 m6 contact-col">
-          <h4 class="">Contact info</h4>
-          <div class="contact-contact">
-            <p class="contact-contact-contact">
-              email: cameronduncan678@gmail.com
-            </p>
-            <p class="contact-contact-contact">number: (+44) 7885 971 152</p>
-            <p class="contact-contact-contact">
-              GitHub: https://github.com/cameronduncan678
+        <div class="col m6 s12">
+          <div class="article-text-box">
+            <p class="article-text">
+              History is full of incredible stories. The best of these come
+              from the amazing people who founded the largest empires this
+              planet has known.
             </p>
           </div>
         </div>
-        <div class="col s12 m6 contact-col">
-          <h4 class="contact-header">Tech used</h4>
-          <div class="contact-tech">
-            <div class="contact-tech-tech">
-              <a href="https://d3js.org/" target="_blank">
-                <img class="tech-logos" src="images/logos/1562726.png" />
-              </a>
-            </div>
-            <div class="contact-tech-tech">
-              <a href="https://www.python.org/" target="_blank">
-                <img
-                  class="tech-logos"
-                  src="images/logos/png-clipart-professional-python-programmer-computer-programming-android-android-blue-logo.png"
-                />
-              </a>
-            </div>
-            <div class="contact-tech-tech">
-              <a href="https://wikitable2csv.ggor.de/" target="_blank">
-                <img
-                  class="tech-logos"
-                  src="images/logos/method-draw-image.svg"
-                />
-              </a>
-            </div>
+        <div class="col m6 s12 article-img">
+          <img src="images/BritEmp-graphic_01.png" />
+        </div>
+      </div>
+    </div>
+    <div class="about-article dark-article">
+      <div class="row">
+        <div class="col m6 s12 article-img">
+          <img src="images/RomEmp-Graphic_01.png" alt="" />
+        </div>
+        <div class="col m6 s12">
+          <div class="article-text-box">
+            <p class="article-text">
+              This Website explores those empires to determine just how large
+              these empires where. Alongside This we analyse the wealth
+              population and give a brief history of the Empire too.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="about-article red-article">
+      <div class="row">
+        <div class="col m6 s12">
+          <div class="article-text-box">
+            <p class="article-text">
+              Using modern Data driven Technology this website brings the
+              fascinating history of these Empires into the Digital Sphere
+            </p>
+          </div>
+        </div>
+        <div class="col m6 s12 article-img">
+          <img src="images/kublai_art_01.png" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://d3js.org/d3.v5.js"></script>
-    <script type="text/javascript" src="js/data.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-  </body>
+  <!--Contact Page-->
+  <section id="contact" style="display: none" class="section container">
+    <div class="row">
+      <div class="col s12 m6 contact-col">
+        <h4 class="">Contact info</h4>
+        <div class="contact-contact">
+          <p class="contact-contact-contact">
+            email: cameronduncan678@gmail.com
+          </p>
+          <p class="contact-contact-contact">number: (+44) 7885 971 152</p>
+          <p class="contact-contact-contact">
+            GitHub: https://github.com/cameronduncan678
+          </p>
+        </div>
+      </div>
+      <div class="col s12 m6 contact-col">
+        <h4 class="contact-header">Tech used</h4>
+        <div class="contact-tech">
+          <div class="contact-tech-tech">
+            <a href="https://d3js.org/" target="_blank">
+              <img class="tech-logos" src="images/logos/1562726.png" />
+            </a>
+          </div>
+          <div class="contact-tech-tech">
+            <a href="https://www.python.org/" target="_blank">
+              <img class="tech-logos"
+                src="images/logos/png-clipart-professional-python-programmer-computer-programming-android-android-blue-logo.png" />
+            </a>
+          </div>
+          <div class="contact-tech-tech">
+            <a href="https://wikitable2csv.ggor.de/" target="_blank">
+              <img class="tech-logos" src="images/logos/method-draw-image.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.js"></script>
+  <script type="text/javascript" src="js/data.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
 </html>
